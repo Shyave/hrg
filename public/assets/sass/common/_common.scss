@@ -1,0 +1,108 @@
+body {
+    font-family: $font_family;
+    font-size: $body1;
+    @include custom_font($body1, $opac1, $regular, $lh-body1);
+}
+
+.main-container{
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}
+
+.margin-auto-div{
+    max-width: 1140px;
+    // width: 100%;
+    margin: 0 auto;
+}
+
+.pointer {
+    cursor: pointer;
+    outline: none;
+}
+
+.logo{
+    height: 64px;
+}
+
+.card-header{
+    @include custom_font($title, $opac1, $medium, $lh-subheader2-title);
+    padding: 20px 24px;
+}
+
+.card-header-bb{
+    @include custom_font($body1, $opac1, $regular, $lh-body1);
+    border-bottom: $border;
+    height: 48px;
+    padding: 0 $gutter;
+}
+
+.display2{
+    @include custom_font($display2, $opac1, $light, $lh-display2);
+}
+
+.display1{
+    @include custom_font($display1, $opac1, $regular, $lh-display1);
+}
+
+.headline{
+    @include custom_font($headline, $opac1, $regular, $lh-headline);
+}
+
+.title{
+    @include custom_font($title, $opac1, $medium, $lh-subheader2-title);
+}
+
+.sub-header{
+    @include custom_font($subheader, $opac1, $regular, $lh-subheader1);
+}
+
+.body-text2{
+    @include custom_font($body2, $opac1, $medium, $lh-body2);
+}
+
+.body-text1{
+    @include custom_font($body1, $opac1, $regular, $lh-body1);
+}
+
+.caption{
+    @include custom_font($caption, $opac2, $regular, $lh-body1);
+}
+
+.caption-bold{
+    @include custom_font($caption, $opac2, $medium, $lh-body1);
+}
+.custom-icon{
+    @include custom_icon($color, $opac2);
+}
+
+.no-margin{ margin: 0px !important; }
+.marginTop { margin-top: $gutter; }
+.marginRight { margin-right: $gutter; }
+.marginBottom { margin-bottom: $gutter; }
+.marginLeft { margin-left: $gutter; }
+.mTop88 { margin-top: 88px; }
+
+.no-padding{ padding: 0px !important; }
+.paddingTop{ padding-top: $gutter; }
+.paddingRight { padding-right: $gutter; }
+.paddingBottom{ padding-bottom: $gutter; }
+.paddingLeft{ padding-left: $gutter; }
+
+.clearfix { clear: both; }
+
+md-progress-linear{
+    z-index: 1000;
+    position: fixed;
+}
+
+.uppercase { text-transform: uppercase }
+.capitalize { text-transform: capitalize }
+.lowercase { text-transform: lowercase }
+
+@media (max-width: 787px){
+    .margin-auto-div{
+        margin-left: $mob_gutter;
+        margin-right: $mob_gutter;
+    }
+}

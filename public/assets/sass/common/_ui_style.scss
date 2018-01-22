@@ -1,0 +1,84 @@
+// Typography
+$font_family: 'Roboto', sans-serif;
+$color: #000;
+$bold: 700;
+$medium: 500;
+$regular: 400;
+$light: 300;
+
+//Opacity...
+$opac0: 1;
+$opac1: 0.87;
+$opac2: 0.54;
+$opac3: 0.38;
+$opac4: 0.12;
+
+//Line-height...
+$lh-display2: 48px;
+$lh-display1: 40px;
+$lh-headline: 32px;
+$lh-subheader2-title: 28px;
+$lh-subheader1: 24px;
+$lh-body2: 24px;
+$lh-body1: 20px;
+
+//Standard border-bottom
+$border: 1px solid rgba(0,0,0,0.12);
+
+//Standard border-bottom
+$gutter: 24px;
+$mob_gutter: 8px;
+$tab_gutter: 16px;
+
+//Standard box shadow...
+$box_shadow: 0 2px 5px rgba(0,0,0,.26);
+
+// Font size
+$display2: 45px;		//Regular, 87% opacity
+$display1: 34px; 		//Regular, 87% Opacity
+$headline: 24px; 		//Regular, 87% opacity
+$title: 20px;			//Medium, 87% opacity
+$subheader: 16px;		//Regular, 87% opa
+$body2: 14px;			//Medium, 87% opacity
+$body1: 14px;			//Regular,	87%
+$caption: 12px;			//Regular, 54%
+
+@mixin custom_font ($size, $opacity, $weight, $line-height){
+	font-size: $size;
+	opacity: $opacity;
+	filter: Alpha(opacity=($opacity*100));
+	font-weight: $weight;
+	line-height: $line-height;
+	word-break: break-all;
+}
+
+// Icon size
+$icon_size: 24px;
+
+$white: #FFFFFF;
+$pr_border_color: #00C4E8;
+$err_border_color: #F44336;
+$background: #F5F5F5;
+
+//Regular border color, should have 12% opacity with 000 border color and hence the Mixins as follows:
+@mixin reg_bord_color($color, $opacity){
+	border-color: $color;
+	opacity: $opacity;
+	filter: Alpha(opacity=($opacity*100));
+}
+
+//Activated icon should have 54% opacity with standard 000 color and inactivated icon should have 38% opacity...
+@mixin custom_icon($color, $opacity){
+	color: $color;
+	opacity: $opacity;
+	filter: Alpha(opacity=($opacity*100));
+}
+
+$accent_700: #00ACCB;
+$accent_500: #00C4E8;
+$accent_300: #4DD5EE;
+$accent_50: #E0F7FC;
+$accent_cf: #00BFDF;
+
+//List view standards...
+$maxWidth: 1032px;

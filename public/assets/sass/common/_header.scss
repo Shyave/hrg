@@ -1,0 +1,36 @@
+.custom-md-toolbar{
+	background-color: #fff !important;
+    position: fixed;
+	top: 0px;
+	z-index: 20;
+	height: 64px;
+	box-shadow: $box_shadow;
+
+	.md-toolbar-tools{
+        padding: 0 $gutter;
+        max-height: inherit;
+		height: inherit;
+		
+		.logoColor{
+			font-size: 22px;
+			margin-left: $tab_gutter;
+			color: #3ac1cd !important;
+			font-family: ostrich-regular !important;
+			line-height: 1.4em;
+    		font-weight: 300;
+		}
+	}
+}
+
+@media (max-width: 767px){
+    .custom-md-toolbar{
+        .md-toolbar-tools{
+			padding: 0 $tab_gutter;
+			
+			.logoColor{
+				font-size: 18px;
+				margin-left: 8px;
+			}
+        }
+    }
+}

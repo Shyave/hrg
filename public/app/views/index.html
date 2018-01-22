@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="hrgDashB">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    <title>HRG Dashboard</title>
+    <!--******** Start of Fav Icon ********-->
+    <link rel="icon" href="assets/img/icon.png" type="image/x-icon" />
+    <!--******** End of Fav Icon ********-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dist/css/csslib.min.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/hrg.min.css" />
+
+</head>
+
+<body ng-cloak data-ng-controller="dataCtrl">
+
+    <header>
+        <md-toolbar class="custom-md-toolbar">
+            <div class="md-toolbar-tools" layout="row" layout-wrap>
+                <div flex layout layout-align="start center">
+                    <img src="assets/img/hrgLogo.png" class="logo" alt="company logo" />
+                    <div class="logoColor">HOPE RESEARCH GROUP</div>
+                </div>
+            </div>
+        </md-toolbar>
+    </header>
+
+    <section>
+        <div class="main-container">
+            <div class="margin-auto-div mTop88 data-container md-whiteframe-2dp">
+                <div class="card">
+                    <nvd3 options="options" data="data"></nvd3>
+                </div>
+            </div>    
+            
+            <div>
+                <div class="copy-right-container" layout layout-align="center center">Copyright &copy; 2017 by HRG</div>
+            </div>
+        </div>
+    </section>    
+
+    <script type="text/javascript" src="dist/js/library.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.9/angular-nvd3.min.js"></script>
+    <script type="text/javascript" src="dist/js/hrg.min.js"></script>
+</body>
+
+</html>
